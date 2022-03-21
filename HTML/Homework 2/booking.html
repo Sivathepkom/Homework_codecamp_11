@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          td {
+            text-align: left;
+            padding: 6px;
+          }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Flying from</td>
+            <td></td>
+            <td>To</td>
+        </tr>
+        
+        <tr>
+            <td>
+                <select id="city" name="city" form="flying form">
+                    <option value="Karachi">Karachi</option>
+                    <option value="Bangkok">Bangkok</option>
+                    <option value="Chiangmai">Chiangmai</option>
+                    <option value="Phuket">Phuket</option>
+                  </select>
+            </td>
+       <td></td>
+            <td>
+                <select id="city" name="city" form="To">
+                    <option value="krabi">krabi</option>
+                    <option value="Bangkok">Bangkok</option>
+                    <option value="Chiangmai">Chiangmai</option>
+                    <option value="Phuket">Phuket</option>
+                  </select>
+            </td>
+        </tr>
+<!-- ขึ้นบรรทัดใหม่ -->
+        <tr>
+            <td>Departure</td>
+            <td></td>
+            <td>Returning</td>
+        </tr>
+
+         <tr>
+            <td>
+                <form action="/action_page.php">
+                    <input type="date" id="departure date" >
+                </form>
+            </td>
+        <td></td>
+             <td>
+                <form action="/action_page.php">
+                <input type="date" id="Returning date" >
+             </td>
+            
+    </tr>  
+    </table>                 
+<!-- ขึ้นบรรทัดใหม่ -->
+<table>
+            <tr>
+                <td>Adult</td>            
+                <td>Child</td>              
+                <td>Infant</td>
+                <td>Currency</td>
+            </tr>
+
+<!-- ขึ้นบรรทัดใหม่ -->
+
+            <tr>
+                <td><input type="number" id="Adult"min="1" max="100"> </td>
+                <td><input type="number" id="Child"min="0" max="100"> </td>
+                <td><input type="number" id="Infant"min="0" max="100"> </td>
+                <!--อันนี้เป็น currency-->
+                    <td> 
+                        <select id="Currency" name="currency" form="Currency">
+                            <option value="THB">THB</option>
+                            <option value="CAD">CAD</option>
+                            <option value="USD">USD</option>
+                            <option value="TWD">TWD</option>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Search">
+                </td>
+            </tr>
+
+    </table>
+    
+
+
+</body>
+</html>
