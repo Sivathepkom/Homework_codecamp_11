@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook register and login form</title>
+     <style>
+         html {
+             background-color: #eef0f0;
+         }
+        .homepage {
+            padding-top: 20vh;
+            padding-bottom: 20vh;
+            padding-right: 30vh;
+            padding-left: 10vh;
+        }
+        .page {
+            display: flex;
+            align-items: center;
+        }        
+        .pageleft {
+            width: 400px;
+            margin: auto;
+        }
+        .form {
+            background-color: white;
+            width: 280px;
+            padding: 20px;
+        }
+        input {
+            display: block;
+            font-size: 15px;
+        }
+        input[type=text],
+        [type=password] {
+            padding: 8px 16px;
+            width: 250px;
+            border: 1px solid gray;
+        }
+        input[type=submit] {
+            display: block;
+            color: white;
+            background-color: blue;
+            padding: 8px 16px;
+            width: 284px
+        }
+        .register {
+            margin: 20px 0 4px 0;
+        }
+        button {
+            border: none;
+            background-color: #19b019;
+            margin: auto;
+            padding: 5px 10px;
+            display: block;
+        }
+        .register a {
+            color: white;
+            font-style: bold;
+            font-size: 16px;
+        }
+        .forgetp {
+            color: blue; text-align: center
+        }  
+            /* this is responsive coding part */
+            /* after 900px seize will be reduce to this amount VH */
+             @media(max-width: 900px) {
+            .homepage {padding: 10vh 0vh 20vh 0vh;}
+            .page {margin: 0; flex-direction: column;}
+            .pageleft {text-align: center;}
+            .form {margin-top: 20px;}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="homepage">
+            <div class="page">
+                    <!-- building left part -->
+                        <div class="pageleft">
+                            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 60px; font-style: bold; color: blue;">
+                                Facebook</div>
+                            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px">
+                                Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</p>
+                        </div>
+                    <!-- building right part -->
+                        <div class="pageright">
+                            <!-- put form -->
+                        <div class="form">
+                            <form action="">
+                                <input type="text" name="email" placeholder="อีเมล์หรือหมายเลขโทรศัพท์มือถือ">
+                                <input type="password" name="password" placeholder="รหัสผ่าน">
+                                <input type="submit" value="เข้าสู่ระบบ">
+                            </form>
+                                <!-- ข้อความลืมรหัสผ่านกับ register ใหม่ -->
+                                <p class="forgetp"><a href="#">ลืมรหัสผ่านใช่หรือไม่</a></p>
+                                <!-- ตรงนี้มีเส้นกั้น hr tag -->
+                                <hr>
+                                <div class="register">
+                                        <button><a href="#">สร้างบัญชีใหม่</a></button>
+                                </div>
+                                </div>
+                                <!-- last text to introduce user to build for business -->
+                            <p><b>สร้างเพจ</b>สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+         
+                </div>
+        </div>
+</body>
+</html>
